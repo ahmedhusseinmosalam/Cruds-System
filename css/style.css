@@ -1,0 +1,41 @@
+
+body{
+    background-color: #444;
+    color: white;
+}
+@font-face {
+    font-family:Pacifico ;
+    src: url("../fonts/Pacifico/Pacifico-Regular.ttf");
+}
+h1{
+    font-family: Pacifico;
+    
+}
+.btnColor{
+    background-color:#BF2EF0;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+.btnColor:hover{
+    background-color: #ED3EF7;
+}
+.bgInput
+{
+    background-color: #111;
+}
+.bgInput:focus{
+    background-color: black;
+}
+.bgInput::placeholder{
+    color: gray;
+}
+input.bgInput[type="text"],
+input.bgInput[type="number"],
+input.bgInput[type="search"],
+input.bgInput[list="categoryy"]
+{
+    color: white;
+}

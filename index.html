@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruds</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row ">
+            <div class="col">
+                <div class="crud-title text-center fw-bold text-light my-4">
+                    <h1>CRUDS SYSTEM</h1>
+                </div>
+                <div class="crud-content">
+                    <div class="input-group mb-2 ">
+                        <span class="input-group-text bgInput border-0 text-secondary" id="inputGroup-sizing-default">Product Name</span>
+                        <input  type="text" id="namee" autocomplete="off" class="form-control border-0 shadow-none bgInput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                      </div>
+                      <div class="row gx-2">
+                        <div class="col-2">
+                            <label for="price" class="visually-hidden">price</label>
+                            <input  type="number"  class="form-control border-0 shadow-none bgInput " id="price" placeholder="price" >
+                        </div>
+                       
+                        <div class="col-2">
+                            <label for="taxes" class="visually-hidden">taxes</label>
+                            <input  type="number"  class="form-control border-0 shadow-none bgInput " id="taxes" placeholder="taxes" >
+                        </div>
+                        <div class="col-2">
+                            <label for="ads" class="visually-hidden">ads</label>
+                            <input  type="number"  class="form-control border-0 shadow-none bgInput " id="ads" placeholder="ads" >
+                        </div>
+                        <div class="col-2">
+                            <label for="discount" class="visually-hidden">discount</label>
+                            <input  type="number"  class="form-control border-0 shadow-none bgInput " id="discount" placeholder="discount" >
+                        </div>
+                        <div class="d-grid col-2">
+                            <small id="total" class="bg-danger fs-5 text-center rounded-2">total</small>
+                        </div>
+                      </div>
+                      
+                        <div class="my-2">
+                            <label for="count" class="visually-hidden">count</label>
+                            <input  type="number" class="form-control border-0 shadow-none bgInput" id="count" placeholder="count" >
+                        </div>
+                        <p id="msgCount" class="alert alert-danger d-none">Choose the product type from the list available to you</p>
+                        <div class="my-2">
+                            <input  class="form-control border-0 shadow-none bgInput" list="categoryy" id="category" placeholder="category">
+                            <datalist id="categoryy">
+                                <option value="Electrical appliances" />
+                                <option value="Mobiles"/>
+                                <option value="electronics"/>
+                                <option value="Adaptations"/>
+                           </datalist>   
+                        </div>
+                        <div class="d-grid col mx-auto my-3">
+                            <button class="btn btnColor rounded-pill fw-bold text-body " id="btnAdd" type="button" >Add Product</button>
+                            <button class="btn btn-warning rounded-pill fw-bold d-none text-light" id="btnUpdate" type="button"  >Update Product</button>
+                          </div>
+                          <div class="my-2">
+                            <label for="searchInput" class="visually-hidden">search</label>
+                            <input type="search" class="form-control border-0 shadow-none bgInput" id="searchInput" placeholder="search"    >
+                        </div>
+
+                       <div class="row mx-auto">
+                        <div class="d-grid col-5 offset-1  ">
+                            <button class="btn btnColor rounded-pill fw-bold text-body" type="button" id="searchTitle" >Search By Name</button>
+                          </div>
+                          <div class="d-grid col-5 ">
+                            <button class="btn btnColor rounded-pill fw-bold text-body" type="button"  id="searchCategory">Search By Category</button>
+                          </div>
+                       </div>
+                       <div class="d-grid col mx-auto my-3"  id="btnDelete">
+                      </div>     
+                </div>
+            </div>
+        </div>
+    
+        <table class="table table-active table-hover rounded-2 text-center my-4  ">
+            <thead class="table-secondary">
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>TOTAL</th>
+                    <th>CATEGORY</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="dataShow">
+           
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
